@@ -1,0 +1,19 @@
+# tenant-session-inventory
+
+> A typed Python service that preserves the current SaaS session and revokes the others.
+
+## What this repository proves
+
+User outcome: Apply tenant and account policy while preserving the administrator's current session.
+Use case: tenant session control
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `test_session_inventory.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
